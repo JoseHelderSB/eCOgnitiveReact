@@ -7,11 +7,6 @@ import iconMecanica from '../../assets/mecanica.png'
 import iconQuimica from '../../assets/quimica.png'
 import iconObras from '../../assets/obras.png'
 
-
-
-
-
-
 const width = Dimensions.get('screen').width;
 
 export default function Poluentes(){
@@ -90,13 +85,14 @@ const estilos = StyleSheet.create({
         fontWeight:"bold",
         color: `#2e8b57`,
         textAlign: "center",
+        paddingVertical: 20,
         },
 
     industriaNome: {
         fontSize: 16,
         lineHeight: 30,
         fontWeight: "bold",
-        color:`#3cb371`,
+        color:`#2e8b57`,
     },
 
     industriaDEsc: {
@@ -106,11 +102,12 @@ const estilos = StyleSheet.create({
     industriaLogo: {
         width: 25,
         height: 25,
+        marginLeft: 10,
+
     },
 
     industriaAlinhamento: {
         flexDirection: "row",
-        justifyContent: "space-between",
         paddingVertical: 3,
     }
 });
