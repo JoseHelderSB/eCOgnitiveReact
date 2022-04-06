@@ -72,12 +72,14 @@ const estilos = StyleSheet.create({
     sobre: {
         fontSize: 20,
         lineHeight: 42,
-        fontWeight: "bold",
+        fontFamily: "MonteserratNegrito",
     },
 
     descricao: {
         paddingVertical: 5,
         color: "#A3A3A3",
+        fontFamily: "MonteserratRegular",
+
     },
 
     principais: {
@@ -91,12 +93,14 @@ const estilos = StyleSheet.create({
     industriaNome: {
         fontSize: 16,
         lineHeight: 30,
-        fontWeight: "bold",
+        fontFamily: "MonteserratNegrito",
         color:`#2e8b57`,
     },
 
     industriaDEsc: {
         color: "#A3A3A3",
+        fontFamily: "MonteserratRegular",
+
     },
 
     industriaLogo: {
