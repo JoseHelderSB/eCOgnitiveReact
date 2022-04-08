@@ -6,6 +6,7 @@ import iconAlimento from '../../assets/alimentos.png'
 import iconMecanica from '../../assets/mecanica.png'
 import iconQuimica from '../../assets/quimica.png'
 import iconObras from '../../assets/obras.png'
+import { Montserrat_700Bold } from "@expo-google-fonts/montserrat";
 
 const width = Dimensions.get('screen').width;
 
@@ -72,19 +73,19 @@ const estilos = StyleSheet.create({
     sobre: {
         fontSize: 20,
         lineHeight: 42,
-        fontFamily: "MonteserratNegrito",
+        fontFamily: "MontserratBold",
     },
 
     descricao: {
         paddingVertical: 5,
         color: "#A3A3A3",
-        fontFamily: "MonteserratRegular",
+        fontFamily: "MontserratRegular",
 
     },
 
     principais: {
         fontSize: 18,
-        fontWeight:"bold",
+        fontFamily: "MontserratBold",
         color: `#2e8b57`,
         textAlign: "center",
         paddingVertical: 20,
@@ -93,13 +94,13 @@ const estilos = StyleSheet.create({
     industriaNome: {
         fontSize: 16,
         lineHeight: 30,
-        fontFamily: "MonteserratNegrito",
+        fontFamily: "MontserratBold",
         color:`#2e8b57`,
     },
 
     industriaDEsc: {
         color: "#A3A3A3",
-        fontFamily: "MonteserratRegular",
+        fontFamily: "MontserratRegular",
 
     },
 
