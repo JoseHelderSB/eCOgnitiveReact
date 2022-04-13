@@ -6,7 +6,7 @@ import {
   Montserrat_700Bold
 } from '@expo-google-fonts/montserrat';
 
-import Poluentes from './src/telas/Poluentes';
+//import Poluentes from './src/telas/Poluentes';
 import Login from './src/telas/Login';
 
 
@@ -23,9 +23,7 @@ export default function App() {
   return (
     <SafeAreaView>
       <StatusBar />
-      <Poluentes />
       <Login />
-
     </SafeAreaView>
   );
 }
