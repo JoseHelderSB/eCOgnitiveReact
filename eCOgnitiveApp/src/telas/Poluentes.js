@@ -1,5 +1,7 @@
 import React from "react";
-import { Image, StyleSheet, Dimensions, Text, View } from 'react-native';
+import { Image, StyleSheet, Dimensions, Text, View, ScrollView } from 'react-native';
+
+import Texto from '../componentes/Texto';
 
 import topo from '../../assets/topo.png'
 import iconAlimento from '../../assets/alimentos.png'
@@ -12,39 +14,42 @@ const width = Dimensions.get('screen').width;
 
 export default function Poluentes(){
     return <>
+
+    <ScrollView>
     <Image source={topo} style={estilos.topo} />
     <Text style={estilos.titulo}>   </Text>
 
     <View style={estilos.box}>
-        <Text style={estilos.sobre}>Sobre</Text>
-        <Text style={estilos.descricao}>O eCOgnitive é uma aplicação que visa disponibilizar gráficos representando os percentuais de emissão de poluentes emitidos na atmosfera através das indústrias.</Text>
+        <Texto style={estilos.sobre}>Sobre</Texto>
+        <Texto style={estilos.descricao}>O eCOgnitive é uma aplicação que visa disponibilizar gráficos representando os percentuais de emissão de poluentes emitidos na atmosfera através das indústrias.</Texto>
 
-        <Text style={estilos.principais}>Principais Indústrias</Text>
+        <Texto style={estilos.principais}>Principais Indústrias</Texto>
 
     <View style={estilos.industriaAlinhamento}>
-         <Text style={estilos.industriaNome}>Alimentos</Text>
+         <Texto style={estilos.industriaNome}>Alimentos</Texto>
          <Image style={estilos.industriaLogo} source={iconAlimento}/>       
     </View>
-    <Text style={estilos.industriaDEsc}>São em maior parte resíduos de animais e vegetais: carne, ossos, pelos, fibras vegetais, etc</Text>
+    <Texto style={estilos.industriaDEsc}>São em maior parte resíduos de animais e vegetais: carne, ossos, pelos, fibras vegetais, etc</Texto>
 
     <View style={estilos.industriaAlinhamento}>
-        <Text style={estilos.industriaNome}>Mecânica</Text>
+        <Texto style={estilos.industriaNome}>Mecânica</Texto>
          <Image style={estilos.industriaLogo} source={iconMecanica}/>        
     </View>
-    <Text style={estilos.industriaDEsc}>A indústria mecânica é a maior emissora de poluentes, sendo responsável por 73,67% das emissões.</Text>
+    <Texto style={estilos.industriaDEsc}>A indústria mecânica é a maior emissora de poluentes, sendo responsável por 73,67% das emissões.</Texto>
 
     <View style={estilos.industriaAlinhamento}>
-        <Text style={estilos.industriaNome}>Química</Text>
+        <Texto style={estilos.industriaNome}>Química</Texto>
          <Image style={estilos.industriaLogo} source={iconQuimica}/>        
     </View>
-    <Text style={estilos.industriaDEsc}>Os resultados provenientes da contaminação química podem aparecer de forma imediata ou posteriormente, isso depende do tipo do poluente.</Text>
+    <Texto style={estilos.industriaDEsc}>Os resultados provenientes da contaminação química podem aparecer de forma imediata ou posteriormente, isso depende do tipo do poluente.</Texto>
 
     <View style={estilos.industriaAlinhamento}>
-        <Text style={estilos.industriaNome}>Obras Civis</Text>
+        <Texto style={estilos.industriaNome}>Obras Civis</Texto>
          <Image style={estilos.industriaLogo} source={iconObras}/>        
     </View>
-    <Text style={estilos.industriaDEsc}>Estima-se que os resíduos de construção e demolição representem de 51% à 70% dos sólidos urbanos que, se mal gerenciados, degradam o meio ambiente.</Text>
+    <Texto style={estilos.industriaDEsc}>Estima-se que os resíduos de construção e demolição representem de 51% à 70% dos sólidos urbanos que, se mal gerenciados, degradam o meio ambiente.</Texto>
     </View>
+    </ScrollView>
     </>
 }
 
@@ -73,7 +78,8 @@ const estilos = StyleSheet.create({
     sobre: {
         fontSize: 20,
         lineHeight: 42,
-        fontFamily: "MontserratBold",
+        fontFamily: "MontserratRegular",
+        fontWeight: "bold",
     },
 
     descricao: {
@@ -85,7 +91,8 @@ const estilos = StyleSheet.create({
 
     principais: {
         fontSize: 18,
-        fontFamily: "MontserratBold",
+        fontFamily: "MontserratRegular",
+        fontWeight: "bold",
         color: `#2e8b57`,
         textAlign: "center",
         paddingVertical: 20,
@@ -94,14 +101,13 @@ const estilos = StyleSheet.create({
     industriaNome: {
         fontSize: 16,
         lineHeight: 30,
-        fontFamily: "MontserratBold",
+        fontWeight: "bold",
         color:`#2e8b57`,
     },
 
     industriaDEsc: {
         color: "#A3A3A3",
         fontFamily: "MontserratRegular",
-
     },
 
     industriaLogo: {

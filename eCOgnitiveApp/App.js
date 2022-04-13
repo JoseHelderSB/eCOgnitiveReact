@@ -7,6 +7,8 @@ import {
 } from '@expo-google-fonts/montserrat';
 
 import Poluentes from './src/telas/Poluentes';
+import Login from './src/telas/Login';
+
 
 export default function App() {
   const[fonteCarregada] = useFonts({
@@ -22,6 +24,8 @@ export default function App() {
     <SafeAreaView>
       <StatusBar />
       <Poluentes />
+      <Login />
+
     </SafeAreaView>
   );
 }
