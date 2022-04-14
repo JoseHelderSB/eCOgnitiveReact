@@ -1,12 +1,16 @@
 import React, { useState } from "react";
-import { Image, StyleSheet, Dimensions, TouchableOpacity, View, TextInput } from 'react-native';
+import { Image, StyleSheet, Dimensions, TouchableOpacity, View, TextInput, Button } from 'react-native';
 import { Ionicons} from '@expo/vector-icons';
+
 
 import Texto from '../componentes/Texto';
 
 import setaEsquerda from '../../assets/arrowLeft.png'
 import logo from '../../assets/icon.png'
-import eyePass from '../../assets/eyepass.png'
+import fbIcon from '../../assets/fb-icon.png'
+import googleIcon from '../../assets/google-icon.png'
+
+
 
 
 import { Montserrat_700Bold } from "@expo-google-fonts/montserrat";
@@ -63,22 +67,29 @@ export default function Login(){
         </View>
 
         <Texto style={estilos.esqueciSenha}>Esqueci a senha</Texto>
+        
+
+        <TouchableOpacity style={estilos.botaoArea}>
+            <Texto style={estilos.botao}>ENTRAR</Texto>
+        </TouchableOpacity>
 
         <Texto style={estilos.ou}>Ou</Texto>
 
+
+        <TouchableOpacity style={estilos.botaoAreaFacebookGoogle}>
+            <Image source={fbIcon}/>    
+            <Texto style={estilos.botaoFG}>Entrar com o Facebook</Texto>
+        </TouchableOpacity>
+        
+        <TouchableOpacity style={estilos.botaoAreaFacebookGoogle}>
+            <Image source={googleIcon}/>    
+            <Texto style={estilos.botaoFG}>Entrar com o Google</Texto>
+        </TouchableOpacity>
         </>
     )
 }
 
 const estilos = StyleSheet.create({
-
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: 20,
-        width: "90%",
-    },
 
     topo:{
         flexDirection: "row",
@@ -127,11 +138,13 @@ const estilos = StyleSheet.create({
     },
 
     input: {
-        borderWidth: 1,
-        borderRadius:5,
+        borderWidth: 0.2,
+        borderRadius:2,
+        opacity: 2,
         width: "85%",
         height: 40,
         padding: 8,
+        
         
     },
 
@@ -154,9 +167,45 @@ const estilos = StyleSheet.create({
 
     ou: {
         textAlign: 'center',
-        marginTop: 50,
+        marginTop: 20,
 
     },
     
+    botaoArea: {
+        display: 'flex',
+        width: "90%",
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        marginTop: 30,
+        height: 50,
+        backgroundColor:`#2A9F85`,
+        borderRadius: 5,  
+        marginLeft: 20,
+        elevation: 2,
+    },
+
+    botao: {
+        fontWeight: "bold",
+        color: '#f5fffa',
+    },
+
+    botaoAreaFacebookGoogle:{
+        flexDirection: 'row',
+        display: 'flex',
+        width: "90%",
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        marginTop: 15,
+        height: 50,
+        backgroundColor:`#F7F7F7`,
+        borderRadius: 5,  
+        marginLeft: 20,
+        elevation: 1,
+    },
+
+    botaoFG: {
+        color: '#2A9F85',
+        width: "60%",
+    },
     
 });
