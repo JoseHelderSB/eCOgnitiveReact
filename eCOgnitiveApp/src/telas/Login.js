@@ -62,6 +62,10 @@ export default function Login(){
 
         </View>
 
+        <Texto style={estilos.esqueciSenha}>Esqueci a senha</Texto>
+
+        <Texto style={estilos.ou}>Ou</Texto>
+
         </>
     )
 }
@@ -139,6 +143,19 @@ const estilos = StyleSheet.create({
         position: 'absolute',
         marginLeft: 290,
         width: "15%",
+    },
+
+    esqueciSenha:{
+        color:`#2e8b57`,
+        textDecorationLine: 'underline',
+        marginLeft: 245,
+        marginTop: 8,
+    },
+
+    ou: {
+        textAlign: 'center',
+        marginTop: 50,
+
     },
     
     
