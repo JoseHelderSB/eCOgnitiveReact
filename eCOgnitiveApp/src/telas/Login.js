@@ -1,18 +1,11 @@
 import React, { useState } from "react";
-import { Image, StyleSheet, Dimensions, TouchableOpacity, View, TextInput, Button } from 'react-native';
+import { Image, StyleSheet, Dimensions, TouchableOpacity, View, TextInput } from 'react-native';
 import { Ionicons} from '@expo/vector-icons';
-
-
 import Texto from '../componentes/Texto';
-
 import setaEsquerda from '../../assets/arrowLeft.png'
 import logo from '../../assets/icon.png'
 import fbIcon from '../../assets/fb-icon.png'
 import googleIcon from '../../assets/google-icon.png'
-
-
-
-
 import { Montserrat_700Bold } from "@expo-google-fonts/montserrat";
 
 const width = Dimensions.get('screen').width;
@@ -143,9 +136,7 @@ const estilos = StyleSheet.create({
         opacity: 2,
         width: "85%",
         height: 40,
-        padding: 8,
-        
-        
+        padding: 8,       
     },
 
     boxLogin: {
@@ -168,7 +159,6 @@ const estilos = StyleSheet.create({
     ou: {
         textAlign: 'center',
         marginTop: 20,
-
     },
     
     botaoArea: {
