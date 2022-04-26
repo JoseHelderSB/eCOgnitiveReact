@@ -70,12 +70,12 @@ export default function Login(){
 
 
         <TouchableOpacity style={estilos.botaoAreaFacebookGoogle}>
-            <Image source={fbIcon}/>    
+            <Image style={estilos.iconFG} source={fbIcon}/>    
             <Texto style={estilos.botaoFG}>Entrar com o Facebook</Texto>
         </TouchableOpacity>
         
         <TouchableOpacity style={estilos.botaoAreaFacebookGoogle}>
-            <Image source={googleIcon}/>    
+            <Image style={estilos.iconFG} source={googleIcon}/>    
             <Texto style={estilos.botaoFG}>Entrar com o Google</Texto>
         </TouchableOpacity>
         </>
@@ -197,5 +197,10 @@ const estilos = StyleSheet.create({
         color: '#2A9F85',
         width: "60%",
     },
+
+    iconFG: {
+        width: 35,
+        height: 35,
+        },
     
 });

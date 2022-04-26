@@ -6,9 +6,13 @@ import {
   Montserrat_700Bold
 } from '@expo-google-fonts/montserrat';
 
-{/*import Poluentes from './src/telas/Poluentes';
-import Login from './src/telas/Login';*/}
-import PrimeiroAcesso from './src/telas/PrimeiroAcesso';
+// import Poluentes from './src/telas/Poluentes';
+// import PrimeiroAcesso from './src/telas/PrimeiroAcesso';
+//import Login from './src/telas/Login';
+
+import CadastroPatrocinador from './src/telas/CadastroPatrocinador';
+
+
 
 
 
@@ -26,8 +30,9 @@ export default function App() {
     <SafeAreaView>
       <StatusBar />
       {/*<Poluentes />
+            <PrimeiroAcesso />
       <Login />*/}
-      <PrimeiroAcesso />
+      <CadastroPatrocinador />
     </SafeAreaView>
   );
 }

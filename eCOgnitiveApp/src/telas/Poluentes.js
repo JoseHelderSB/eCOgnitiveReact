@@ -2,7 +2,7 @@ import React from "react";
 import { Image, StyleSheet, Dimensions, Text, View, ScrollView } from 'react-native';
 
 import Texto from '../componentes/Texto';
-
+w
 import topo from '../../assets/topo.png'
 import iconAlimento from '../../assets/alimentos.png'
 import iconMecanica from '../../assets/mecanica.png'
