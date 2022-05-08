@@ -13,4 +13,5 @@ A ideia do nome do projeto surgiu através de um pensamento ecológico, visto qu
 ## FRONT END
 - React Native
 - JavaScript
+- TypeScript
 - Expo 
