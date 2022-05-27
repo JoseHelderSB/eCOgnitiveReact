@@ -82,7 +82,7 @@ export const styles = StyleSheet.create({
         fontSize: 20,
     },
     cadastrar: {
-        marginLeft: 15,
-        marginTop: 20,
+        marginLeft: 30,
+        marginTop: 35,
     }
 });

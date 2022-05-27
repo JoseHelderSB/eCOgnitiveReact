@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
     container: {
-        height: "100%",
+        flex: 1,
     },
 
     topo: {
@@ -70,6 +70,8 @@ export const styles = StyleSheet.create({
     },
 
     botao: {
+        textAlign: 'center',
+
         fontWeight: "bold",
         color: '#f5fffa',
     },
