@@ -7,8 +7,7 @@ import CadastroPatrocinador from './CadastroPatrocinador';
 import CadastroIndustria from './CadastroIndustria';
 import CadastroColetor from './CadastroColetor';
 import BemVindo from './BemVindo';
-
-
+import VisaoGeral from './VisaoGeral';
 
 
 import { ParametrosTelas } from './ParametrosTelas';
@@ -19,6 +18,7 @@ export default function Routes(){
     return (
         <NavigationContainer>
             <Stack.Navigator>
+                <Stack.Screen name="VisaoGeral" component={VisaoGeral} options={{header: () => null}}></Stack.Screen>
                 <Stack.Screen name="PrimeiroAcesso" component={PrimeiroAcesso} options={{header: () => null}}></Stack.Screen>
                 <Stack.Screen name="CadastroPatrocinador" component={CadastroPatrocinador} options={{header: () => null}}></Stack.Screen>
                 <Stack.Screen name="CadastroIndustria" component={CadastroIndustria} options={{header: () => null}}></Stack.Screen>
